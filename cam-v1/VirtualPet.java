@@ -36,4 +36,8 @@ public class VirtualPet {
         face.setImage("asleep");
     }
 
+    public void youngerThan18(){
+        face.setImage("astonished");
+    }
+
 } // end Virtual Pet

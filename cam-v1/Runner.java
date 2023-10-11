@@ -9,7 +9,14 @@ public class Runner {
         p.exercise();
          takeABeat(1000);  
          p.feed(); 
-         String ans= "3";
+         System.out.println(getResponse("how many balls do you have?"));
+         
+         int ans=getAge("How old are you");
+         System.out.println(ans);
+         if(ans<18){
+            p.youngerThan18();
+         }
+         
 
     }
 
@@ -20,12 +27,29 @@ public class Runner {
 
         }
     }
+    public String getResponse(String q){
     String s = (String)JOptionPane.showInputDialog(
          new JFrame(),
-         "How many balls do you have?",
+         q,
          "Question?",
          JOptionPane.PLAIN_MESSAGE
        );
+
+       return s;
+       
+    }
+    public int getAge(String q){
+         String s = (String)JOptionPane.showInputDialog(
+         new JFrame(),
+         q,
+         "Question?",
+         JOptionPane.PLAIN_MESSAGE
+       );
+       int x = Integer.parseInt(s);
+       return x;
+
+    
+    }
 
     public static void main(String[] args){
         new Runner();
