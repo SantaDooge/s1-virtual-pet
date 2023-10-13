@@ -40,4 +40,33 @@ public class VirtualPet {
         face.setImage("astonished");
     }
 
+    public void message(String a) {
+        face.setMessage(a);
+    }
+    public void olderThan18(){
+        face.setImage("angry");
+    }
+
+    public void cry() {
+        face.setImage("cry");
+    }
+
+    public void happy() {
+        face.setImage("joyful");
+    }
+
+    public void sus() {
+        face.setImage("love");
+    }
+
+    public void ecstatic () {
+        face.setImage("ecstatic");
+    }
+
+    public void depressed() {
+        face.setImage("depressed");
+    }
+
+
+
 } // end Virtual Pet
