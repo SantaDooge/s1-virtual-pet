@@ -36,7 +36,7 @@ public class VirtualPet {
         face.setImage("asleep");
     }
 
-    public void youngerThan18(){
+    public void bamboozled(){
         face.setImage("astonished");
     }
 
@@ -67,6 +67,30 @@ public class VirtualPet {
         face.setImage("depressed");
     }
 
+    public void sick(){
+        face.setImage("sick");
+    }
+
+    public void sadge(){
+        face.setImage("verysad");
+    }
+
+    public void dead(){
+        face.setImage("dead");
+    
+    }
+    
+    public void skeleton(){
+        face.setImage("skeleton");
+    }
+
+    public void grave(){
+        face.setImage("pushingdaisies");
+    }
+
+    public void angel(){
+            face.setImage("angel");
+    }
 
 
 } // end Virtual Pet

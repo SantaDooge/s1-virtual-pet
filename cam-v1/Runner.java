@@ -1,8 +1,11 @@
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import java.lang.Math;
+import java.util.concurrent.ThreadLocalRandom;
+
 public class Runner {
     public  boolean Answer;
+    public boolean answerBoolean;
 
     public Runner(){
         
@@ -28,17 +31,16 @@ public class Runner {
             p.message("so old");
             p.olderThan18();
          }
-         int max = 80;
-         int min = 1;
-         int range = max - min + 1;
-         int rand 
-  
-         // generate random numbers within 1 to 10
-         for (int i = 0; i < 80; i++) {
-             int rand = (int)(Math.random() * range) + min;
-      
-        }
-           p.message("you have " +rand+ " years to live!");
+         
+         int randomNum = ThreadLocalRandom.current().nextInt(1, 60 + 1);
+         System.out.println(randomNum);
+
+    
+        
+           optionSelect("you have " +randomNum+ " years to live!", "omg!", "wowzers!");
+
+
+
     }
         else{
             p.message("BORRINGG");
@@ -129,6 +131,27 @@ public class Runner {
             "An Inane Question",
             JOptionPane.YES_NO_OPTION);
     return n;
+    }
+    public String optionSelect(String a, String b, String c) {
+        Object[] options = {b,
+                            c};
+        int n = JOptionPane.showOptionDialog(
+            new JFrame(),
+            a,
+            null,
+            JOptionPane.YES_NO_OPTION,
+            JOptionPane.QUESTION_MESSAGE,
+            null,     //do not use a custom Icon
+            options,  //the titles of buttons
+            options[0]); //default button title);
+        if(JOptionPane.YES_OPTION == n) {
+            answerBoolean = true;
+            return "yes";
+        }
+        else {
+            answerBoolean = false;
+            return "no";
+        }
     }
 
 }
