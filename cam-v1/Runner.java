@@ -83,7 +83,7 @@ public class Runner {
             p.message("so old");
             p.olderThan18();
          }
-         System.out.println(buttonQuestion("are you on the gay radar"));
+         System.out.println(buttonQuestion("are you on thelk;fd;lsd;lhf'ar"));
          
 
     }
