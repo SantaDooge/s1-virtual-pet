@@ -38,6 +38,29 @@ public class Runner {
     
         
            optionSelect("you have " +randomNum+ " years to live!", "omg!", "wowzers!");
+           p.bamboozled();
+         p.message("I will grant you one wish");
+        String ans5=optionSelect("do you want fame", "no I don't need fame", "yes");
+        takeABeat(1000);
+        String ans6= optionSelect("would you like money", "no I don't need money", "yes");
+        if (ans5.equals("yes")|| ans6.equals("yes")){
+            p.message("you are too greedy");
+            p.shocked();
+            takeABeat(1500);
+            p.minecraftdeath();
+            
+        }
+        else{
+            p.message("you passed the test");
+            takeABeat(1000);
+            p.message("you did not choose fame or money so I will let you live your life peacefully" );
+            p.happy();
+            takeABeat(1500);
+            p.ecstatic();
+            takeABeat(1000);
+            p.backflip();
+            
+        }
 
 
 
@@ -58,32 +81,6 @@ public class Runner {
              takeABeat(2000);
         }
 
-         {
-            p.happy();
-            takeABeat(1500);
-            p.sus();
-            String ans2 = getResponse("Can I play with you?");
-            if(ans2.equals("yes")) {
-                p.ecstatic();
-                takeABeat(1500);
-            }
-            else {
-                p.depressed();
-                takeABeat(1500);
-            }
-         }
-         
-         int ans=getAge("How old are you");
-         System.out.println(ans);
-         if(ans<18){
-            p.bamboozled();
-            p.message("so young!!");
-         }
-         else{
-            p.message("so old");
-            p.olderThan18();
-         }
-         System.out.println(buttonQuestion("are you on thelk;fd;lsd;lhf'ar"));
          
 
     }

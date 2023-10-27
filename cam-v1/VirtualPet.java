@@ -91,6 +91,17 @@ public class VirtualPet {
     public void angel(){
             face.setImage("angel");
     }
+    public void minecraft(){
+        face.setImage("minecraftdeath");
+
+    }
+
+    public void shocked(){
+        face.setImage("shocked");
+    }
+    public void backflip(){
+        face.setImage("backflip");
+    }
 
 
 } // end Virtual Pet
